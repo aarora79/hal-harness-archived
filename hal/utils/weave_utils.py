@@ -48,6 +48,8 @@ MODEL_PRICES_DICT = {
                 "amazon.nova-lite-v1:0" : {"prompt_tokens": 0.00006/1e3, "completion_tokens": 0.00024/1e3},
                 "bedrock/amazon.nova-pro-v1:0": {"prompt_tokens": 0.0008/1e3, "completion_tokens": 0.0032/1e3},
                 "amazon.nova-pro-v1:0" : {"prompt_tokens": 0.0008/1e3, "completion_tokens": 0.0032/1e3},
+                "bedrock/us.anthropic.claude-3-opus-20240229-v1:0": {"prompt_tokens": 0.015/1e3, "completion_tokens": 0.075/1e3},
+                "us.anthropic.claude-3-opus-20240229-v1:0" : {"prompt_tokens": 0.015/1e3, "completion_tokens": 0.075/1e3},
                 "bedrock/us.anthropic.claude-3-5-sonnet-20241022-v2:0": {"prompt_tokens": 0.003/1e3, "completion_tokens": 0.015/1e3},
                 "us.anthropic.claude-3-5-sonnet-20241022-v2:0" : {"prompt_tokens": 0.003/1e3, "completion_tokens": 0.015/1e3},
                 "bedrock/us.anthropic.claude-3-sonnet-20240229-v1:0": {"prompt_tokens": 0.003/1e3, "completion_tokens": 0.015/1e3},

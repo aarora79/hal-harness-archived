@@ -244,7 +244,7 @@ Now the harness should be able to run Cybench.
       BENCHMARK_NAME=usaco
       AGENT_DIR=agents/usaco_bedrock_agents/
       AGENT_FUNCTION=main.run
-      MODEL_NAME=bedrock/amazon.nova-lite-v1:0 
+      MODEL_NAME=bedrock/amazon.nova-micro-v1:0
       AGENT_NAME="USACO_${MODEL_NAME}"
       PWD=`pwd`
       PROMPT_TEMPLATE_PATH=${PWD}/${AGENT_DIR}/prompt_templates/nova.txt
@@ -256,13 +256,14 @@ Now the harness should be able to run Cybench.
           --agent_name $AGENT_NAME \
           -A model_name=$MODEL_NAME \
           -A prompt_template_path=$PROMPT_TEMPLATE_PATH \
-          --max_concurrent $CONCURRENCY
+          --max_concurrent $CONCURRENCY #--continue_run --run_id usaco_1736295446
       ```
       Use the model ids listed in the table below for the `MODEL_NAME` variable to try out other foundation models available via Amazon Bedrock.
       | Model Name                  | Model ID                                             |Model ID                                             |
       |-----------------------------|-----------------------------------------------------|-----------------------------------------------------|
       | Anthropic Claude 3.5 Haiku  | bedrock/us.anthropic.claude-3-5-haiku-20241022-v1:0  | `claude.txt` |
       | Anthropic Claude 3.5 Sonnet | bedrock/us.anthropic.claude-3-5-sonnet-20241022-v2:0 |`claude.txt` |
+      | Anthropic Claude 3 Opus     | bedrock/us.anthropic.claude-3-opus-20240229-v1:0  | `claude.txt` |
       | Anthropic Claude 3 Sonnet   | bedrock/us.anthropic.claude-3-sonnet-20240229-v1:0   |`claude.txt` |
       | Amazon Nova Pro             | bedrock/amazon.nova-pro-v1:0                         |`nova.txt` |
       | Amazon Nova Lite            | bedrock/amazon.nova-lite-v1:0                        |`nova.txt` |
